@@ -64,7 +64,7 @@ public class ZookeeperConnector {
         LinkedList<InetSocketAddress> result = new LinkedList<InetSocketAddress>();
         for (String hostport : hostports) {
             String[] elements = hostport.split(":");
-            assert elements.length == 2: Integer.toString(elements.length) + " == 2";
+            //assert elements.length == 2: Integer.toString(elements.length) + " == 2";
             String host = elements[0];
             int port = Integer.parseInt(elements[1]);
             result.add(new InetSocketAddress(host, port));
